@@ -143,7 +143,7 @@ namespace RSAEncryption
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                Console.WriteLine("Encryption failed.");
+               
             }
         }
 
@@ -155,6 +155,12 @@ namespace RSAEncryption
             decryptButton.Visible = true;
             textBox1.Visible = true;
             encryptButton.Visible = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            textBox2.Text = resultTextBox.Text;
         }
     }
 
